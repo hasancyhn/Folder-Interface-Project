@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>368</width>
+    <height>321</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPlainTextEdit" name="plainTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>341</width>
+      <height>231</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>368</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile_Edit">
+    <property name="title">
+     <string>File Edit</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionCopy"/>
+    <addaction name="actionC"/>
+    <addaction name="actionPaste"/>
+    <addaction name="actionSelect_All"/>
+    <addaction name="actionSelect_None"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionToolbar_Top"/>
+    <addaction name="actionToolbar_Bottom"/>
+    <addaction name="actionToolbar_Right"/>
+    <addaction name="actionToolbar_Left"/>
+    <addaction name="separator"/>
+    <addaction name="actionToolbar_Floatable"/>
+    <addaction name="actionToolbar_Movable"/>
+   </widget>
+   <widget class="QMenu" name="menuForms">
+    <property name="title">
+     <string>Forms</string>
+    </property>
+    <addaction name="actionOpen_Form"/>
+   </widget>
+   <addaction name="menuFile_Edit"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuView"/>
+   <addaction name="menuForms"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew"/>
+   <addaction name="actionOpen"/>
+   <addaction name="actionSave"/>
+   <addaction name="actionCopy"/>
+   <addaction name="actionC"/>
+   <addaction name="actionPaste"/>
+   <addaction name="actionSelect_All"/>
+   <addaction name="actionSelect_None"/>
+  </widget>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/images/new.png</normaloff>:/icons/images/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/images/open.png</normaloff>:/icons/images/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/images/save.png</normaloff>:/icons/images/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/images/copy.png</normaloff>:/icons/images/copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy</string>
+   </property>
+  </action>
+  <action name="actionC">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/images/cut.png</normaloff>:/icons/images/cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cut</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/images/paste.png</normaloff>:/icons/images/paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>Paste</string>
+   </property>
+  </action>
+  <action name="actionSelect_All">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/images/selectall.png</normaloff>:/icons/images/selectall.png</iconset>
+   </property>
+   <property name="text">
+    <string>Select All</string>
+   </property>
+  </action>
+  <action name="actionSelect_None">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/images/selectnone.png</normaloff>:/icons/images/selectnone.png</iconset>
+   </property>
+   <property name="text">
+    <string>Select None</string>
+   </property>
+  </action>
+  <action name="actionToolbar_Top">
+   <property name="text">
+    <string>Toolbar Top</string>
+   </property>
+  </action>
+  <action name="actionToolbar_Bottom">
+   <property name="text">
+    <string>Toolbar Bottom</string>
+   </property>
+  </action>
+  <action name="actionToolbar_Right">
+   <property name="text">
+    <string>Toolbar Right</string>
+   </property>
+  </action>
+  <action name="actionToolbar_Left">
+   <property name="text">
+    <string>Toolbar Left</string>
+   </property>
+  </action>
+  <action name="actionToolbar_Floatable">
+   <property name="text">
+    <string>Toolbar Floatable</string>
+   </property>
+  </action>
+  <action name="actionToolbar_Movable">
+   <property name="text">
+    <string>Toolbar Movable</string>
+   </property>
+  </action>
+  <action name="actionOpen_Form">
+   <property name="text">
+    <string>Open Form</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
